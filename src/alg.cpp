@@ -2,16 +2,12 @@
 
 int gcd(int a, int b) {
     int divider;
-    if (a > b) 
-    {
+    if (a > b) {
         divider = b;
-    }
-    else
-    {
+    } else {
         divider = a;
     }
-    while (a % divider != 0 || b % divider != 0)
-    {
+    while (a % divider != 0 || b % divider != 0) {
         divider--;
     }
     return divider;
