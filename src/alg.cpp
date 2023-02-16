@@ -1,5 +1,18 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-    // поместить сюда текст реализации алгоритма (на С++)
+    int divider;
+    if (a > b) 
+    {
+        divider = b;
+    }
+    else
+    {
+        divider = a;
+    }
+    while (a % divider != 0 || b % divider != 0)
+    {
+        divider--;
+    }
+    return divider;
 }
